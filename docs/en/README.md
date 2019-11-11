@@ -2,8 +2,7 @@
 layout: Resume
 ---
 
-
-# 關於個人
+# My simple Resume
 
 <!-- ### 簡介 <Badge text="alpha" type="warn"/> <Badge text="0.0.-1+"/> -->
 
@@ -13,6 +12,5 @@ layout: Resume
 <Experiences />
 <Projects />
 <Educations />
-
 
 <MousePosition title="mouse position with composition api"/>

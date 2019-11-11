@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <md-card-header>
+      <md-icon class="md-primary">build</md-icon>
+      <span class="md-title">{{title}}</span>
+      <md-divider class="about-inset"></md-divider>
+    </md-card-header>
+
+    <md-card-content class="about-inset">
+      <div v-for="(item, index) in pro">
+        <h3>
+          <span class="protitle">{{index+1}}. {{item.title}}</span>
+          <br />
+          <span class="meta">
+            <a v-if="item.url" :href="item.url" target="_blank">URL</a>
+            <a v-if="item.repository" :href="item.repository" target="_blank">GitHub</a>
+            [{{item.meta.join(', ')}}]
+          </span>
+        </h3>
+        <div class="pro-content">
+          <h4>{{item.description}}</h4>
+        </div>
+      </div>
+    </md-card-content>
+  </div>
+</template>
+<script>
+import data from '../data'
+
+export default {
+  data() {
+    return {
+      title: "Projects",
+      pro: data.projects
+    };
+  }
+};
+</script>
+<style lang="scss">
+.pro-content {
+  margin-left: 20px;
+}
+.meta {
+  margin-left: 20px;
+  font-size: 0.8em;
+}
+.protitle {
+  font-size: 1.2em;
+}
+</style>
