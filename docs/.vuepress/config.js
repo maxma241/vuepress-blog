@@ -32,13 +32,13 @@ module.exports = {
         },
         algolia: {},
         nav: [
-          { text: 'Home', link: '/' },
+          { text: 'Resume', link: '/' },
           { text: 'tech murmur', link: '/blogs/' },
           { text: 'GitHub', link: 'https://github.com/maxma241' },
         ],
         sidebar: [
           {
-            title: 'about me',
+            title: 'a',
             collapsable: false,
             path: '/',
             children: [ 
@@ -69,7 +69,7 @@ module.exports = {
         },
         algolia: {},
         nav: [
-          { text: '首頁', link: '/' },
+          { text: '履歷', link: '/' },
           { text: '技術文章', link: '/blogs/' },
           { text: 'GitHub', link: 'https://github.com/maxma241' },
         ],

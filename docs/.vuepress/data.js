@@ -128,9 +128,9 @@ const projects = [
     repository: 'https://github.com/maxma241/work_punch'
   },
   {
-    title: '綜藝節目-綜藝玩很大',
+    title: '初學React',
     meta: ['react'],
-    description: '會看這節目，為了方便就寫了一個簡單的page，一開始用傳統jQuery方式寫，後來新增一頁用React呈現的view (天才衝衝衝的channel沒了，所以沒東西)',
+    description: '將以前用jQuery寫的專案，改為React (兩個youtube channel皆已消失)',
     url:'http://maxma241.github.io/tvprogram/TVRE.html',
     repository: 'https://github.com/maxma241/tvprogram'
   },

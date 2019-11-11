@@ -12,11 +12,12 @@
     </div>
 </template>
 <script>
+    import data from '../data'
     export default {
         props:['about'],
         data(){
             return {
-                title:'About'
+                title:'About',
             }
         }
     }
