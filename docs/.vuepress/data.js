@@ -12,8 +12,8 @@ const experiences = [
   {
     workAt: '香港商阿爾伊股份有限公司(RE 紅包)',
     companyUrl: 'https://myre.life/',
-    position: 'Front-end Engineer / Full-stack Engineer',
-    duration: '2017/04 – 2017/12 / 2018/01 - now',
+    position: 'Front-end Engineer, Full-stack Engineer',
+    duration: '2017/04 – 2017/12, 2018/01 - now',
     description: '只要登錄消費金額，管你怎麼Pay，皆享最高4%現金回饋',
     highlights: [
       '在這具有從0到有的經驗，建立店家平台、官網、內部管理平台...等等',
@@ -52,7 +52,7 @@ const experiences = [
       },
       {
         name: 'RE Line@ 活動ChatBot',
-        description: '因應line@ 2.0，做此bot爾後精準行銷用',
+        description: '一個簡單可擴充的KYC問答架構，會員完成活動後能獲得紅包現金',
         tags: ['TypeScript', 'Bottender', 'Express', 'Molecular','TypeORM', 'MySql', 'Redis']
       },
     ],

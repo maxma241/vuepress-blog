@@ -12,13 +12,22 @@
     </div>
 </template>
 <script>
-import data from '../data';
+import Data from '../data';
+import EnData from '../en-data';
+
 export default {
   data() {
     return {
       title: 'About',
-      about: data.introduce.about,
     };
+  },
+  computed: {
+    about() {
+      if (this.$lang === 'en-US') {
+        return EnData.introduce.about
+      }
+      return Data.introduce.about;
+    }
   },
 };
 </script>

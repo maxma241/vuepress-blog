@@ -18,14 +18,23 @@
   </div>
 </template>
 <script>
-import data from '../data'
+import Data from '../data'
+import EnData from '../en-data'
+
 export default {
   data() {
     return {
       title: "Education",
-      edu: data.educations
     };
-  }
+  },
+  computed: {
+    edu() {
+      if (this.$lang === 'en-US') {
+        return EnData.educations
+      }
+      return Data.educations
+    }
+  },
 };
 </script>
 <style lang="scss">

@@ -31,7 +31,8 @@
   </div>
 </template>
 <script>
-import data from '../data'
+import Data from '../data'
+import EnData from '../en-data'
 import Tag from './Tag.vue'
 
 export default {
@@ -39,9 +40,16 @@ export default {
   data() {
     return {
       title: "Projects",
-      pro: data.projects
     };
-  }
+  },
+  computed: {
+    pro() {
+      if (this.$lang === 'en-US') {
+        return EnData.projects
+      }
+      return Data.projects
+    }
+  },
 };
 </script>
 <style lang="scss">

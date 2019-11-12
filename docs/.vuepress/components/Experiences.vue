@@ -40,6 +40,7 @@
 </template>
 <script>
 import Data from "../data";
+import EnData from "../en-data";
 import Tag from './Tag.vue'
 
 export default {
@@ -47,10 +48,17 @@ export default {
   // props:['exps'],
   data() {
     return {
-      exps: Data.experiences,
       title: "Work Experience"
     };
-  }
+  },
+  computed: {
+    exps() {
+      if (this.$lang === 'en-US') {
+        return EnData.experiences
+      }
+      return Data.experiences
+    }
+  },
 };
 </script>
 <style lang="scss">

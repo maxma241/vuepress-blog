@@ -46,7 +46,8 @@
   </md-list>
 </template>
 <script>
-import data from "../data";
+import Data from "../data";
+import EnData from "../en-data";
 import MySkillList from "./MySkillList.vue";
 import Educations from "./Educations.vue";
 import About from "./About.vue";
@@ -55,8 +56,15 @@ import About from "./About.vue";
 export default {
   components: { Skill: MySkillList, Educations, About },
   data: () => ({
-    introduce: data.introduce
-  })
+  }),
+  computed: {
+    introduce() {
+      if (this.$lang === 'en-US') {
+        return EnData.introduce
+      }
+      return Data.introduce;
+    }
+  },
 };
 </script>
 
