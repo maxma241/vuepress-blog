@@ -29,7 +29,7 @@
               <h4>{{project.name}}</h4>
               <div>{{project.description}}</div>
               <template v-for="t in project.tags">
-                <Tag :text="t" color="#b0b1b5" />
+                <Tag :text="t" />
               </template> 
             </li>
           </ul>

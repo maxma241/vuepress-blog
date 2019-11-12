@@ -11,23 +11,31 @@
         <h3>
           <span class="protitle">{{index+1}}. {{item.title}}</span>
           <br />
+          <div class="pro-content">
+            <h4>{{item.description}}</h4>
+          </div>
           <span class="meta">
-            <a v-if="item.url" :href="item.url" target="_blank">URL</a>
+            <a v-if="item.url" :href="item.url" target="_blank">Demo</a>
+            <span v-show="item.url">|</span>
             <a v-if="item.repository" :href="item.repository" target="_blank">GitHub</a>
-            [{{item.meta.join(', ')}}]
+            <div class="project-tags">
+              <template v-for="t in item.meta">
+                <Tag :text="t" />
+              </template>
+            </div>
           </span>
         </h3>
-        <div class="pro-content">
-          <h4>{{item.description}}</h4>
-        </div>
+        
       </div>
     </md-card-content>
   </div>
 </template>
 <script>
 import data from '../data'
+import Tag from './Tag.vue'
 
 export default {
+  components: { Tag },
   data() {
     return {
       title: "Projects",
@@ -37,8 +45,15 @@ export default {
 };
 </script>
 <style lang="scss">
+.project-tags {
+  padding: 1px 15px;
+}
 .pro-content {
   margin-left: 20px;
+  font-size: initial;
+  h4 {
+    margin-bottom: 5px;
+  }
 }
 .meta {
   margin-left: 20px;

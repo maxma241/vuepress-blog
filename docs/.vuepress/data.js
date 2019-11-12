@@ -5,8 +5,7 @@ const introduce = {
   livedIn: '台北市',
   email: 'marfi241@gmail.com',
   github: 'https://github.com/maxma241',
-  phone: '這個資不方便寫上',
-  about:`熱衷程式新事物，目前在JS生態圈打滾。喜歡與人討論如何解決問題，具有獨立開發，解決問題及良好的學習能力。平常會關心各種技術及技術社團的文章。`
+  about:`熱衷程式新事物。喜歡與人討論如何解決問題，具有獨立開發，解決問題及良好的學習能力。平常會關心各種技術及技術社團的文章。`
 }
 
 const experiences = [
@@ -65,10 +64,17 @@ const experiences = [
     duration: '2016/06 – 2017/02',
     description: '商智資訊提供了銀行金融服務解決方案，例如財富管理系統、行動理專APP、資產配置系統。',
     highlights: [
-      '負責財富管理系統，使用Java Struts2, Spring',
+      '負責財富管理系統',
       '幫助公司導入git版控，開了內部教育訓練課程 (<a href="https://www.slideshare.net/maxma98/git-73699918" target="_blank">slideshare</a>)',
-      '引導同事使用ES6',
+      '傳教同事ES6, vue, react等等新奇東西',
       '專案follow git flow 使用jenkins自動包版'
+    ],
+    projects:[
+      {
+        name: 'WMS財富管理系統(Wealth Management System)',
+        description: '維護及開發新功能',
+        tags: ['Java', 'Struts2', 'Spring', 'MSSQL', 'JSP', 'jQuery']
+      },
     ]
   },
   // {
@@ -100,7 +106,7 @@ const educations = [
 // Ud4b544877ee32adeb15a4bd735209962
 const projects = [
   {
-    title: '個人網站(建置中)',
+    title: '個人網站',
     meta: ['vuepress', 'markdown'],
     description: '把履歷跟技術文章整合在這',
     url:'',
@@ -115,15 +121,15 @@ const projects = [
   },
   {
     title: '個人簡歷',
-    meta: ['vue', 'vue-cli', 'vue-material', 'ES6', 'scss'],
-    description: '用了vue寫了個簡歷頁面，使用了vue material',
+    meta: ['vue', 'vue-cli 2.x', 'vue-material', 'ES6', 'scss'],
+    description: '用了vue寫了個簡歷頁面，使用vue material',
     url:'https://maxma241.github.io/',
     repository: 'https://github.com/maxma241/maxma241.github.io'
   },
   {
     title: '為了下指令打卡',
     meta: ['node', 'selenium-webdriver', 'babel', 'ES6'],
-    description: '前公司2017新制的關係，為了省時間打卡就做了這個',
+    description: '為了省時間打卡就做了這個',
     url:'',
     repository: 'https://github.com/maxma241/work_punch'
   },

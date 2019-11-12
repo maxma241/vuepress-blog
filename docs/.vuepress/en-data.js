@@ -5,7 +5,6 @@ const introduce = {
     livedIn: '台北市',
     email: 'marfi241@gmail.com',
     github: 'https://github.com/maxma241',
-    phone: '這個資不方便寫上',
     about: `熱衷程式新事物，目前在JS生態圈打滾。喜歡與人討論如何解決問題，具有獨立開發，解決問題及良好的學習能力。平常會關心各種技術及技術社團的文章。`
 }
 

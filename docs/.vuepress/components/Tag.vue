@@ -11,7 +11,7 @@ export default {
 <style lang="scss" scoped>
 .tag {
   display: inline-block;
-  margin: 5px 10px;
+  margin: 5px 5px;
   background-color: #f0db4f;
   padding: 3px 15px;
   border-radius: 5px;

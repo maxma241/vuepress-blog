@@ -7,23 +7,23 @@
         </md-card-header>
         
         <md-card-content class="about-inset">
-            <h4 v-html="about"></h4>
+            <h3 v-html="about"></h3>
         </md-card-content>
     </div>
 </template>
 <script>
-    import data from '../data'
-    export default {
-        props:['about'],
-        data(){
-            return {
-                title:'About',
-            }
-        }
-    }
+import data from '../data';
+export default {
+  data() {
+    return {
+      title: 'About',
+      about: data.introduce.about,
+    };
+  },
+};
 </script>
 <style lang="scss">
-    .about-inset {
-        margin-left: 25px;
-    }
+.about-inset {
+  margin-left: 25px;
+}
 </style>

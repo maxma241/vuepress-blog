@@ -39,9 +39,9 @@
       <md-divider class="md-inset"></md-divider>
     </md-list-item> -->
 
-    <!--skill-->
     <Skill />
     <!-- <Educations /> -->
+    <About />
     
   </md-list>
 </template>
@@ -49,10 +49,11 @@
 import data from "../data";
 import MySkillList from "./MySkillList.vue";
 import Educations from "./Educations.vue";
+import About from "./About.vue";
 
 
 export default {
-  components: { Skill: MySkillList, Educations },
+  components: { Skill: MySkillList, Educations, About },
   data: () => ({
     introduce: data.introduce
   })

@@ -1,8 +1,8 @@
 <template>
 <div class="skill">
   <h3>技能關鍵字</h3>
-  <span class="skill-item" v-for="s in skills" :key="s">
-    {{ s }}
+  <span class="skill-item" v-for="s in skills" :key="s[0]" :style="{ backgroundColor: s[1], color: s[2] }">
+    {{ s[0] }}
   </span>
 </div>
 </template>
@@ -28,11 +28,11 @@ export default {
   padding-left: 20px;
   &-item {
     display: inline-block;
-    margin: 5px 10px;
+    margin: 5px 5px;
     background-color: #f0db4f;
     padding: 3px 15px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 }
