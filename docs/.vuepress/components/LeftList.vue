@@ -7,9 +7,9 @@
           <img src="http://i.imgur.com/R9HV81f.png" alt="People" />
         </md-avatar>
         <span>
-          {{introduce.cname}}
+          {{introduce.cname}}({{introduce.ename}})
           <br />
-          ({{introduce.ename}})
+          {{introduce.jobTitle}}
         </span>
       </md-list-item>
     </md-toolbar>
