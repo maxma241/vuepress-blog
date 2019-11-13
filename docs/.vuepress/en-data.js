@@ -1,7 +1,7 @@
 const introduce = {
     cname: '馬楊陞',
     ename: 'Max Ma',
-    jobTitle: 'Full-stack Engineer',
+    jobTitle: 'Full-stack Developer',
     livedIn: 'Taipei, Taiwan',
     email: 'marfi241@gmail.com',
     github: 'https://github.com/maxma241',
@@ -16,12 +16,12 @@ const experiences = [
         duration: '2017/04 – 2017/12, 2018/01 - now',
         description: 'By entering the payment amount, up to 4% cash rebate for you, no matter how you pay',
         highlights: [
-            'having projects experience from 0 to 1, like RE-Boss, Official Web Site, RE Admin(CRM, CMS)...etc',
+            'Having projects experience from 0 to 1, like RE-Boss, Official Web Site, RE Admin(CRM, CMS)...etc',
             'Participate in product feature development and planning, and co-work with other front-end and back-end colleagues, like UI/UX, Database design, micro services...etc',
-            'resolve browsers, iOS/Android webview compatibility problems',
+            'Resolve browsers, iOS/Android webview compatibility problems',
             'Opened git/git-flow/gitlab-flow, github/gitlab sharing session',
             'Opened the GraphQL Sharing Session',
-            'developed micro service by TDD(jest)',
+            'Developed micro service by TDD(jest)',
             'Participated in the construction of CI/CD(jenkins, gitlab-ci, ELK), now using jenkins',
         ],
         projects: [
@@ -66,8 +66,8 @@ const experiences = [
         highlights: [
             'Responsible for wealth management system (WMS), using Java Struts2, Spring',
             'Help companies import git version control and opened internal education training courses (<a href="https://www.slideshare.net/maxma98/git-73699918" target="_blank">slideshare</a>)',
-            'sharing New thins with colleague, like ES6, react, vue, with colleague',
-            'using Jenkins, and git flow'
+            'Sharing New thins with colleague, like ES6, react, vue, with colleague',
+            'Using Jenkins, and git flow'
         ]
     },
     // {
@@ -101,21 +101,21 @@ const projects = [
     {
         title: 'Personal Web site',
         meta: ['vuepress', 'markdown'],
-        description: 'write some tech articles, and resume',
+        description: 'Write some tech articles, and resume',
         url: 'https://maxma241.github.io/vuepress-blog/',
         repository: 'https://github.com/maxma241/vuepress-blog'
     },
     {
-        title: 'tech murmur',
+        title: 'Tech murmur',
         meta: ['github', 'issue', 'markdown'],
         description: 'Irregularly write tech articles in issues',
         url: '',
         repository: 'https://github.com/maxma241/tech-murmur/issues'
     },
     {
-        title: 'old resume',
+        title: 'Old resume',
         meta: ['vue', 'vue-cli', 'vue-material', 'ES6', 'scss'],
-        description: 'create resume by vue and vue-material',
+        description: 'Create resume by vue and vue-material',
         url: 'https://maxma241.github.io/',
         repository: 'https://github.com/maxma241/maxma241.github.io'
     },
@@ -129,7 +129,7 @@ const projects = [
     {
         title: 'React Beginner',
         meta: ['react'],
-        description: 'refactor old jQuery project to React.(the two YouTube channels are disabled)',
+        description: 'Refactor old jQuery project to React.(the two YouTube channels are disabled)',
         url: 'http://maxma241.github.io/tvprogram/TVRE.html',
         repository: 'https://github.com/maxma241/tvprogram'
     },

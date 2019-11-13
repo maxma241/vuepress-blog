@@ -1,7 +1,7 @@
 const introduce = {
   cname: '馬楊陞',
   ename: 'Max Ma',
-  jobTitle: 'Full-stack Engineer',
+  jobTitle: 'Full-stack Developer',
   livedIn: '台北市',
   email: 'marfi241@gmail.com',
   github: 'https://github.com/maxma241',
