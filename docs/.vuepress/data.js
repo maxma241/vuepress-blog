@@ -12,7 +12,7 @@ const experiences = [
   {
     workAt: '香港商阿爾伊股份有限公司(RE 紅包)',
     companyUrl: 'https://myre.life/',
-    position: 'Front-end Engineer, Full-stack Engineer',
+    position: 'Front-end Developer, Full-stack Developer',
     duration: '2017/04 – 2017/12, 2018/01 - now',
     description: '只要登錄消費金額，管你怎麼Pay，皆享最高4%現金回饋',
     highlights: [
