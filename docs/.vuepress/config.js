@@ -47,7 +47,7 @@ module.exports = {
         ],
         sidebar: [
           {
-            title: 'a',
+            title: 'introduce',
             collapsable: false,
             path: '/',
             children: [ 
@@ -62,6 +62,7 @@ module.exports = {
               '/blogs/vue-vs-react-hooks',
               '/blogs/first-jest-toy',
               '/blogs/vue-composition-api-debounce',
+              '/blogs/use-apollo',
             ]
           }
         ],
@@ -97,6 +98,7 @@ module.exports = {
               '/blogs/vue-vs-react-hooks',
               '/blogs/first-jest-toy',
               '/blogs/vue-composition-api-debounce',
+              '/blogs/use-apollo',
             ]
           }
         ],
