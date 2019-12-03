@@ -13,4 +13,4 @@ layout: Resume
 <Projects />
 <Educations />
 
-<MousePosition title="mouse position with composition api"/>
+<!-- <MousePosition title="mouse position with composition api"/> -->
