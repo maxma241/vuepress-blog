@@ -10,6 +10,29 @@ const introduce = {
 
 const experiences = [
   {
+    workAt: '趨勢科技 TrendMicro',
+    companyUrl: 'https://www.trendmicro.com/',
+    position: 'Software Engineer',
+    duration: '2020/02 – now',
+    description: '',
+    highlights: [
+      '負責公司內部service',
+      '需要找stakeholder談需求',
+      '目前負責PLVRS (Project Legal Vulnerabilities Review System)',
+      '學習AWS',
+      'DevOps with Jenkins',
+      'Scrum, weekly Sprint meeting',
+      '使用Jira',
+    ],
+    projects:[
+      {
+        name: 'PLVRS (Project Legal Vulnerabilities Review System)',
+        description: 'migrate 15年老web app成react SPA, pending兩年的React SPA, 整個大重構中(There are many bad-smell in legacy code, many duplicate copy/paste codes)',
+        tags: ['React', 'React Redux', 'React Router', 'Styled Component', 'React-use', 'TypeScript', 'TrendMicro Frontend', 'Jenkins']
+      },
+    ],
+  },
+  {
     workAt: '香港商阿爾伊股份有限公司(RE 紅包)',
     companyUrl: 'https://myre.life/',
     position: 'Front-end Developer, Full-stack Developer',
