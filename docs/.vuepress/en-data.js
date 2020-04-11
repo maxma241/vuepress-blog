@@ -21,14 +21,15 @@ const experiences = [
       'Now responsible for PLVRS (Project Legal Vulnerabilities Review System)',
       'Learning AWS',
       'Learning DevOps with Jenkins',
-      'Develop with Scrum (weekly Sprint meeting)',
+      'Scrum (weekly meeting)',
       'Use Jira',
+      'Maybe do the case operations everyday on the old PLVRS'
     ],
     projects: [
       {
         name: 'PLVRS (Project Legal Vulnerabilities Review System)',
-        description: 'migrate 15 years old web app to new React SPA(the SPA has been pending for 2 years), Refactor and Improve architecture now(There are many bad-smell in legacy code, many duplicate copy/paste codes)',
-        tags: ['React', 'React Redux', 'React Router', 'Styled Component', 'React-use', 'TypeScript', 'TrendMicro Frontend', 'Jenkins']
+        description: 'migrate 15 years old web app to new React SPA(the SPA has been pending for 2 years), Refactor and Improve architecture',
+        tags: ['GO', 'React', 'React Redux', 'React Router', 'Styled Component', 'React-use', 'TypeScript', 'TrendMicro Frontend', 'Jenkins']
       },
     ],
   },

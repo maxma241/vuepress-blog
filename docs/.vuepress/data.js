@@ -21,14 +21,15 @@ const experiences = [
       '目前負責PLVRS (Project Legal Vulnerabilities Review System)',
       '學習AWS',
       'DevOps with Jenkins',
-      'Scrum, weekly Sprint meeting',
+      'Scrum, weekly meeting',
       '使用Jira',
+      '每天可能有case要做(操作PLVRS)'
     ],
     projects:[
       {
         name: 'PLVRS (Project Legal Vulnerabilities Review System)',
-        description: 'migrate 15年老web app成react SPA, pending兩年的React SPA, 整個大重構中(There are many bad-smell in legacy code, many duplicate copy/paste codes)',
-        tags: ['React', 'React Redux', 'React Router', 'Styled Component', 'React-use', 'TypeScript', 'TrendMicro Frontend', 'Jenkins']
+        description: 'migrate 15年老web app成react SPA, pending兩年的React SPA, 整個大重構中',
+        tags: ['GO', 'React', 'React Redux', 'React Router', 'Styled Component', 'React-use', 'TypeScript', 'TrendMicro Frontend', 'Jenkins']
       },
     ],
   },
