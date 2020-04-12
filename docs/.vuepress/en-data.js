@@ -37,7 +37,7 @@ const experiences = [
     workAt: '香港商阿爾伊股份有限公司(RE, Red Envelop)',
     companyUrl: 'https://myre.life/',
     position: 'Front-end Developer, Full-stack Developer',
-    duration: '2017/04 – 2017/12, 2018/01 - now',
+    duration: '2017/04 – 2017/12, 2018/01 - 2020/02',
     description: 'By entering the payment amount, up to 4% cash rebate for you, no matter how you pay',
     highlights: [
       'Having projects experience from 0 to 1, like RE-Boss, Official Web Site, RE Admin(CRM, CMS)...etc',
