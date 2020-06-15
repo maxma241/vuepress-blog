@@ -10,6 +10,23 @@ const introduce = {
 
 const experiences = [
   {
+    workAt: 'Aotter Inc.',
+    companyUrl: 'https://aotter.net/',
+    position: 'Front-end Engineer',
+    duration: '2020/06/15 – now',
+    description: '',
+    highlights: [
+      'Newbie-ing'
+    ],
+    projects:[
+      {
+        name: 'TBD',
+        description: 'TBD',
+        tags: ['Vue Ecosystem']
+      },
+    ],
+  },
+  {
     workAt: 'TrendMicro',
     companyUrl: 'https://www.trendmicro.com/',
     position: 'Software Engineer',

@@ -10,10 +10,27 @@ const introduce = {
 
 const experiences = [
   {
+    workAt: '電獺公司',
+    companyUrl: 'https://aotter.net/',
+    position: 'Front-end Engineer',
+    duration: '2020/06/15 – now',
+    description: '',
+    highlights: [
+      'Newbie-ing'
+    ],
+    projects:[
+      {
+        name: 'TBD',
+        description: 'TBD',
+        tags: ['Vue Ecosystem']
+      },
+    ],
+  },
+  {
     workAt: '趨勢科技 TrendMicro',
     companyUrl: 'https://www.trendmicro.com/',
     position: 'Software Engineer',
-    duration: '2020/02 – now',
+    duration: '2020/02/24 – 2020/06/10',
     description: '',
     highlights: [
       '負責公司內部service',
@@ -28,7 +45,7 @@ const experiences = [
     projects:[
       {
         name: 'PLVRS (Project Legal Vulnerabilities Review System)',
-        description: 'migrate 15年老web app成react SPA, pending兩年的React SPA, 整個大重構中',
+        description: 'migrate 15年老web app成react SPA, pending兩年的React SPA, 整個專案大重構',
         tags: ['GO', 'React', 'React Redux', 'React Router', 'Styled Component', 'React-use', 'TypeScript', 'TrendMicro Frontend', 'Jenkins']
       },
     ],
