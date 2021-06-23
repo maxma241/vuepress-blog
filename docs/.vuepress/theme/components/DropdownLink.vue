@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="dropdown-wrapper"
-    :class="{ open }"
-  >
+  <div class="dropdown-wrapper" :class="{ open }">
     <button
       class="dropdown-title"
       type="button"
@@ -10,17 +7,11 @@
       @click="toggle"
     >
       <span class="title">{{ item.text }}</span>
-      <span
-        class="arrow"
-        :class="open ? 'down' : 'right'"
-      ></span>
+      <span class="arrow" :class="open ? 'down' : 'right'"></span>
     </button>
 
     <DropdownTransition>
-      <ul
-        class="nav-dropdown"
-        v-show="open"
-      >
+      <ul class="nav-dropdown" v-show="open">
         <li
           class="dropdown-item"
           :key="subItem.link || index"
@@ -28,10 +19,7 @@
         >
           <h4 v-if="subItem.type === 'links'">{{ subItem.text }}</h4>
 
-          <ul
-            class="dropdown-subitem-wrapper"
-            v-if="subItem.type === 'links'"
-          >
+          <ul class="dropdown-subitem-wrapper" v-if="subItem.type === 'links'">
             <li
               class="dropdown-subitem"
               :key="childSubItem.link"
@@ -40,10 +28,11 @@
               <NavLink
                 @focusout="
                   isLastItemOfArray(childSubItem, subItem.items) &&
-                  isLastItemOfArray(subItem, item.items) &&
-                  toggle()
+                    isLastItemOfArray(subItem, item.items) &&
+                    toggle()
                 "
-                :item="childSubItem"/>
+                :item="childSubItem"
+              />
             </li>
           </ul>
 
@@ -66,40 +55,39 @@ import last from 'lodash/last'
 export default {
   components: { NavLink, DropdownTransition },
 
-  data () {
+  data() {
     return {
-      open: false
+      open: false,
     }
   },
 
   props: {
     item: {
-      required: true
-    }
+      required: true,
+    },
   },
 
   computed: {
-
-    dropdownAriaLabel () {
+    dropdownAriaLabel() {
       return this.item.ariaLabel || this.item.text
-    }
+    },
   },
 
   methods: {
-    toggle () {
+    toggle() {
       this.open = !this.open
     },
 
-    isLastItemOfArray (item, array) {
+    isLastItemOfArray(item, array) {
       return last(array) === item
-    }
+    },
   },
 
   watch: {
-    $route () {
+    $route() {
       this.open = false
-    }
-  }
+    },
+  },
 }
 </script>
 

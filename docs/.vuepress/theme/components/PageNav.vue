@@ -3,11 +3,15 @@
     <p class="inner">
       <span v-if="prev" class="prev">
         ←
-        <router-link v-if="prev" class="prev" :to="prev.path">{{ prev.title || prev.path }}</router-link>
+        <router-link v-if="prev" class="prev" :to="prev.path">{{
+          prev.title || prev.path
+        }}</router-link>
       </span>
 
       <span v-if="next" class="next">
-        <router-link v-if="next" :to="next.path">{{ next.title || next.path }}</router-link>
+        <router-link v-if="next" :to="next.path">{{
+          next.title || next.path
+        }}</router-link>
         →
       </span>
     </p>
@@ -22,21 +26,21 @@ export default {
   name: 'PageNav',
   props: ['sidebarItems'],
   computed: {
-    prev () {
+    prev() {
       return resolvePageLink(LINK_TYPES.PREV, this)
     },
 
-    next () {
+    next() {
       return resolvePageLink(LINK_TYPES.NEXT, this)
-    }
-  }
+    },
+  },
 }
 
-function resolvePrev (page, items) {
+function resolvePrev(page, items) {
   return find(page, items, -1)
 }
 
-function resolveNext (page, items) {
+function resolveNext(page, items) {
   return find(page, items, 1)
 }
 
@@ -44,16 +48,16 @@ const LINK_TYPES = {
   NEXT: {
     resolveLink: resolveNext,
     getThemeLinkConfig: ({ nextLinks }) => nextLinks,
-    getPageLinkConfig: ({ frontmatter }) => frontmatter.next
+    getPageLinkConfig: ({ frontmatter }) => frontmatter.next,
   },
   PREV: {
     resolveLink: resolvePrev,
     getThemeLinkConfig: ({ prevLinks }) => prevLinks,
-    getPageLinkConfig: ({ frontmatter }) => frontmatter.prev
-  }
+    getPageLinkConfig: ({ frontmatter }) => frontmatter.prev,
+  },
 }
 
-function resolvePageLink (
+function resolvePageLink(
   linkType,
   { $themeConfig, $page, $route, $site, sidebarItems }
 ) {
@@ -77,7 +81,7 @@ function resolvePageLink (
   }
 }
 
-function find (page, items, offset) {
+function find(page, items, offset) {
   const res = []
   flatten(items, res)
   for (let i = 0; i < res.length; i++) {
@@ -88,7 +92,7 @@ function find (page, items, offset) {
   }
 }
 
-function flatten (items, res) {
+function flatten(items, res) {
   for (let i = 0, l = items.length; i < l; i++) {
     if (items[i].type === 'group') {
       flatten(items[i].children || [], res)
@@ -113,5 +117,4 @@ function flatten (items, res) {
     overflow auto // clear float
   .next
     float right
-
 </style>

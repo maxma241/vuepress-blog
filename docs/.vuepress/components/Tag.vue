@@ -1,11 +1,13 @@
 <template>
-  <div class="tag" :style="{ backgroundColor: color || '#f0db4f' }">{{text}}</div>
+  <div class="tag" :style="{ backgroundColor: color || '#f0db4f' }">
+    {{ text }}
+  </div>
 </template>
 
 <script>
 export default {
-  props: ["text", "color"]
-};
+  props: ['text', 'color'],
+}
 </script>
 
 <style lang="scss" scoped>

@@ -7,9 +7,9 @@
           <img src="http://i.imgur.com/R9HV81f.png" alt="People" />
         </md-avatar>
         <span>
-          {{introduce.cname}}({{introduce.ename}})
+          {{ introduce.cname }}({{ introduce.ename }})
           <br />
-          {{introduce.jobTitle}}
+          {{ introduce.jobTitle }}
         </span>
       </md-list-item>
     </md-toolbar>
@@ -17,7 +17,7 @@
 
     <md-list-item>
       <md-icon class="md-primary">email</md-icon>
-      <span>{{introduce.email}}</span>
+      <span>{{ introduce.email }}</span>
     </md-list-item>
 
     <md-list-item>
@@ -29,7 +29,7 @@
 
     <md-list-item>
       <md-icon class="md-primary">location_city</md-icon>
-      <span>{{introduce.livedIn}}</span>
+      <span>{{ introduce.livedIn }}</span>
     </md-list-item>
 
     <!-- <md-list-item>
@@ -42,30 +42,27 @@
     <Skill />
     <!-- <Educations /> -->
     <About />
-    
   </md-list>
 </template>
 <script>
-import Data from "../data";
-import EnData from "../en-data";
-import MySkillList from "./MySkillList.vue";
-import Educations from "./Educations.vue";
-import About from "./About.vue";
-
+import Data from '../data'
+import EnData from '../en-data'
+import MySkillList from './MySkillList.vue'
+import Educations from './Educations.vue'
+import About from './About.vue'
 
 export default {
   components: { Skill: MySkillList, Educations, About },
-  data: () => ({
-  }),
+  data: () => ({}),
   computed: {
     introduce() {
       if (this.$lang === 'en-US') {
         return EnData.introduce
       }
-      return Data.introduce;
-    }
+      return Data.introduce
+    },
   },
-};
+}
 </script>
 
 <style lang="scss">

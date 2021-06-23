@@ -1,7 +1,6 @@
 import { reactive, toRefs } from '@vue/composition-api'
 
 export function useMySkillData() {
-
   const skills = reactive([
     ['TypeScript', '#007acc', '#ffffff'],
     ['JavaScript', '#f0db4f', '#323330'],
@@ -33,6 +32,5 @@ export function useMySkillData() {
     ['Angular', '#a6120d', '#ffffff'],
   ])
 
-  return toRefs(skills);
-
+  return toRefs(skills)
 }

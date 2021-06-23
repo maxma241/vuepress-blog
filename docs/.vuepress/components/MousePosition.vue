@@ -7,21 +7,21 @@
 </template>
 
 <script>
-import { useMousePosition, useMouseClickPosition } from '../compositions/mouse';
+import { useMousePosition, useMouseClickPosition } from '../compositions/mouse'
 
 export default {
   props: {
-    title: String
+    title: String,
   },
   setup() {
-    const { x, y } = useMousePosition();
-    const { x: x2, y: y2 } = useMouseClickPosition();
+    const { x, y } = useMousePosition()
+    const { x: x2, y: y2 } = useMouseClickPosition()
     return {
       x,
       y,
       x2,
-      y2
-    };
-  }
-};
+      y2,
+    }
+  },
+}
 </script>

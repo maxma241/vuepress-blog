@@ -1,20 +1,18 @@
 <template>
   <aside class="sidebar">
     <LeftList />
-    <slot name="top"/>
-    <slot name="bottom"/>
+    <slot name="top" />
+    <slot name="bottom" />
   </aside>
 </template>
 
 <script>
 import LeftList from '../../components/LeftList.vue'
 
-
 export default {
   name: 'Sidebar',
 
   components: { LeftList },
-
 }
 </script>
 
