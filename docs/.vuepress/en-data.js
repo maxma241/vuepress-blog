@@ -14,7 +14,7 @@ const experiences = [
     companyUrl: 'https://aotter.net/',
     position: 'Front-end Engineer, Senior Software Engineer',
     duration: '2020/06/15 - 2021/05/31, 2021/06/01 - now',
-    description: 'Ahead of Time，縮短「價值創造（Time to value）」的時間',
+    description: 'Ahead of Time，reduce the process time of Time to Value',
     highlights: [
       'Responsibility to All Web Applications of Company, including SA, SD, CI/CD',
       '2021 Walk-bell awards Web Application',
