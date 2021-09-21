@@ -25,7 +25,8 @@
           </ul>
         </div>
         <div v-if="exp.projects" class="exp-content">
-          <span>參與專案</span>
+          <span v-if="$lang === 'zh-TW'">參與專案</span>
+          <span v-else>Participated in Projects</span>
           <ul>
             <li v-for="project in exp.projects" :key="project.name">
               <h4>{{ project.name }}</h4>
