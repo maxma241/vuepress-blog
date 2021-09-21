@@ -2,7 +2,7 @@
 layout: Resume
 ---
 
-# My simple Resume
+# Resume
 
 <!-- ### 簡介 <Badge text="alpha" type="warn"/> <Badge text="0.0.-1+"/> -->
 

@@ -3,7 +3,7 @@ layout: Resume
 ---
 
 
-# 關於個人
+# 個人簡歷
 
 <!-- ### 簡介 <Badge text="alpha" type="warn"/> <Badge text="0.0.-1+"/> -->
 
