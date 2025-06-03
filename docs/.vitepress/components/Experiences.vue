@@ -30,8 +30,8 @@
 </template>
 <script setup lang="ts">
 import { computed } from 'vue'
-import data from '../data'
-import enData from '../en-data'
+import data from '../../data'
+import enData from '../../en-data'
 import Tag from './Tag.vue'
 
 const lang = document.documentElement.lang === 'en-US' ? 'en' : 'zh'

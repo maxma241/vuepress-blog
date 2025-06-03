@@ -12,8 +12,8 @@
 </template>
 <script setup lang="ts">
 import { computed } from 'vue'
-import data from '../data'
-import enData from '../en-data'
+import data from '../../data'
+import enData from '../../en-data'
 
 const lang = document.documentElement.lang === 'en-US' ? 'en' : 'zh'
 const edu = computed(() => lang === 'en' ? enData.educations : data.educations)
