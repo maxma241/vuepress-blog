@@ -21,7 +21,10 @@ import data from '../../data'
 import enData from '../../en-data'
 import Tag from './Tag.vue'
 
-const lang = document.documentElement.lang === 'en-US' ? 'en' : 'zh'
+const lang = typeof document !== 'undefined' &&
+  document.documentElement.lang === 'en-US'
+  ? 'en'
+  : 'zh'
 const pro = computed(() => lang === 'en' ? enData.projects : data.projects)
 const title = lang === 'en' ? 'Projects' : '專案'
 </script>

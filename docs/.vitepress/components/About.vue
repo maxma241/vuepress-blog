@@ -9,6 +9,9 @@ import { computed } from 'vue'
 import data from '../../data'
 import enData from '../../en-data'
 
-const lang = document.documentElement.lang === 'en-US' ? 'en' : 'zh'
+const lang = typeof document !== 'undefined' &&
+  document.documentElement.lang === 'en-US'
+  ? 'en'
+  : 'zh'
 const about = computed(() => lang === 'en' ? enData.introduce.about : data.introduce.about)
 </script>

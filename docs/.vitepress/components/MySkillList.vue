@@ -10,7 +10,11 @@ import data from '../../data'
 import enData from '../../en-data'
 import Tag from './Tag.vue'
 
-const lang = computed(() => document.documentElement.lang === 'en-US' ? 'en' : 'zh')
+const lang = computed(() =>
+  typeof document !== 'undefined' && document.documentElement.lang === 'en-US'
+    ? 'en'
+    : 'zh'
+)
 const skills = computed(() => lang.value === 'en' ? enData.skills : data.skills)
 const title = computed(() => lang.value === 'en' ? 'Skills' : '技能關鍵字')
 </script>
