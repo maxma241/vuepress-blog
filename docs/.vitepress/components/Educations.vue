@@ -15,7 +15,10 @@ import { computed } from 'vue'
 import data from '../../data'
 import enData from '../../en-data'
 
-const lang = document.documentElement.lang === 'en-US' ? 'en' : 'zh'
+const lang = typeof document !== 'undefined' &&
+  document.documentElement.lang === 'en-US'
+  ? 'en'
+  : 'zh'
 const edu = computed(() => lang === 'en' ? enData.educations : data.educations)
 const title = lang === 'en' ? 'Education' : '學歷'
 </script>

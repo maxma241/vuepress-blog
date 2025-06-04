@@ -34,7 +34,10 @@ import data from '../../data'
 import enData from '../../en-data'
 import Tag from './Tag.vue'
 
-const lang = document.documentElement.lang === 'en-US' ? 'en' : 'zh'
+const lang = typeof document !== 'undefined' &&
+  document.documentElement.lang === 'en-US'
+  ? 'en'
+  : 'zh'
 const exps = computed(() => lang === 'en' ? enData.experiences : data.experiences)
 const title = lang === 'en' ? 'Work Experience' : '工作經歷'
 </script>
