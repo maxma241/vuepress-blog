@@ -1,12 +1,11 @@
-# 個人簡歷
+---
+layout: doc
+title: Max Home
+sidebar: false
+---
 
 <script setup>
-import Experiences from './.vitepress/components/Experiences.vue'
-import Projects from './.vitepress/components/Projects.vue'
-import Educations from './.vitepress/components/Educations.vue'
+import ResumeLayout from './.vitepress/components/ResumeLayout.vue'
 </script>
 
-<Experiences />
-<Projects />
-<Educations />
-
+<ResumeLayout />

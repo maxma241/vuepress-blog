@@ -102,3 +102,4 @@ dist
 
 # TernJS port file
 .tern-port
+\n# vitepress build cache\ndocs/.vitepress/cache

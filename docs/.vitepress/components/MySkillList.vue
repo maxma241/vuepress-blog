@@ -1,7 +1,9 @@
 <template>
-  <div class="pl-4">
-    <h3 class="font-bold mb-2">{{ title }}</h3>
-    <Tag v-for="s in skills" :key="s[0]" :text="s[0]" />
+  <div class="mt-4">
+    <h3 class="text-sm font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">{{ title }}</h3>
+    <div class="flex flex-wrap gap-2">
+      <Tag v-for="s in skills" :key="s.name || s[0]" :text="s.name || s[0]" class="bg-white dark:bg-gray-700 shadow-sm border border-gray-100 dark:border-gray-600" />
+    </div>
   </div>
 </template>
 <script setup lang="ts">
@@ -16,5 +18,5 @@ const lang = computed(() =>
     : 'zh'
 )
 const skills = computed(() => lang.value === 'en' ? enData.skills : data.skills)
-const title = computed(() => lang.value === 'en' ? 'Skills' : '技能關鍵字')
+const title = computed(() => lang.value === 'en' ? 'Core Skills' : '專業技能')
 </script>
