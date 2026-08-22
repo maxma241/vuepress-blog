@@ -3,7 +3,7 @@ import UnoCSS from 'unocss/vite'
 
 export default defineConfig({
   lang: 'zh-TW',
-  title: 'Max Ma Resume',
+  title: 'Max Home',
   description: 'Max Ma 個人頁面',
   base: '/vuepress-blog/',
   vite: {
@@ -13,7 +13,9 @@ export default defineConfig({
     nav: [
       { text: 'Resume', link: '/' },
       { text: 'Tech Blog', link: '/blogs/' },
-      { text: 'GitHub', link: 'https://github.com/maxma241' },
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/maxma241' }
     ],
     sidebar: {
       '/blogs/': [

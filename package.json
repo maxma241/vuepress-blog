@@ -12,5 +12,10 @@
     "unocss": "^0.58.5",
     "vitepress": "^1.6.4",
     "vue": "^3.5.41"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.2.25",
+    "@unocss/preset-icons": "^0.58.9",
+    "@unocss/preset-typography": "^0.58.9"
   }
 }

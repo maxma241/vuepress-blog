@@ -1,6 +1,10 @@
 <template>
-  <span class="px-2 py-0.5 rounded bg-gray-200 mr-1 mb-1 inline-block text-sm">{{ text }}</span>
+  <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200">
+    {{ text }}
+  </span>
 </template>
 <script setup lang="ts">
-defineProps<{ text: string }>()
+defineProps<{
+  text: string
+}>()
 </script>
